@@ -18,11 +18,11 @@ const tabs: Tab[] = [
     path: '/',
   },
   {
-    label: 'Cafes',
+    label: 'Tech',
     path: '/',
   },
   {
-    label: 'Room',
+    label: 'Cafes',
     path: '/',
   },
 ];
