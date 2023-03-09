@@ -12,21 +12,21 @@ export function Navbar() {
   const [darkmode, setDarkmode] = useState(false);
 
   return (
-    <nav className="sticky top-0 isolate z-10 flex items-center justify-center py-4 px-1 md:justify-between">
+    <nav className="sticky top-0 isolate z-10 flex items-center justify-center py-4 px-1 sm:justify-between">
       <NavTabGroup />
 
       <motion.div
         className={classNames(
-          'hidden md:flex',
+          'hidden sm:flex',
           'transition-opacity',
           scrollPosition > 20 && 'pointer-events-none !opacity-0'
         )}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 1 }}
+        transition={{ delay: 0.75 }}
       >
         <div
-          className="cursor-pointer text-zinc-600"
+          className="cursor-alias text-zinc-600"
           onClick={() => {
             if (darkmode) {
               document.body.classList.remove('dark');
